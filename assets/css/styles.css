@@ -657,16 +657,6 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .work__figure :is(img, video) { width: 100%; height: auto; min-height: 0; aspect-ratio: 4 / 3; object-fit: cover; }
 .work__caption { padding: 0.9rem 1.25rem; font-size: var(--t-micro); color: var(--ink-3); border-top: 1px solid var(--line); }
 
-/* --------------------------------------------------------------------------
-   Reviews: quotes separated by space and rules, no card containers
-   -------------------------------------------------------------------------- */
-.quotes { display: grid; gap: clamp(1.5rem, 3vw, 2.5rem); }
-.quote { display: grid; gap: 1rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
-.quote p { font-size: var(--t-lead); line-height: 1.5; letter-spacing: -0.01em; }
-.quote footer { display: grid; gap: 0.15rem; font-size: var(--t-small); color: var(--ink-3); }
-.quote footer b { color: var(--ink); font-weight: 500; }
-.stars { display: flex; gap: 0.15rem; color: var(--accent); }
-.stars svg { width: 0.9rem; height: 0.9rem; }
 
 /* --------------------------------------------------------------------------
    Coverage: a directory, not a marquee. One rule per row, two columns.
@@ -934,7 +924,6 @@ td:first-child { font-weight: 500; color: var(--ink); }
   .bento__cell--third { grid-column: span 2; }
   .bento__cell--half { grid-column: span 3; }
   .compare { grid-template-columns: repeat(2, 1fr); }
-  .quotes { grid-template-columns: repeat(3, 1fr); }
   .split { grid-template-columns: 1fr 1fr; }
   .split--flip .split__media { order: 2; }
   .svc-row { grid-template-columns: 0.8fr 1.2fr; }

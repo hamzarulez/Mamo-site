@@ -47,7 +47,6 @@ business-specific, so this is the whole list.
 | Service list, home and services pages | Residential, commercial, EV charging, lighting, design and permits | Confirm the company does each of these. The list is standard for an Ontario licensed contractor, not taken from the business. |
 | Engineering wording, services page | "sealed engineering drawings ... bring in the right professional" | Confirm the arrangement for sealed drawings. Do not claim engineering work that requires a P.Eng unless one is engaged. |
 | Service area, home and about pages | 16 Elgin County municipalities | Confirm which areas are actually served. |
-| Reviews, home page | Three sample quotes | Replace with real, permissioned reviews. The sample copy is marked with an HTML comment. |
 | Response time, home page FAQ | "Most quotes are scheduled within a few business days" | Confirm or remove. |
 | Trading name | "Ayeza Electrical" on site, "Ayeza Electrical Supplies Inc." in the footer | Confirm the name the company trades under. |
 
