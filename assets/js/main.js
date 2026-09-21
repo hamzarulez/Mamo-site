@@ -94,6 +94,21 @@
     }
   }
 
+  /* Autoplay project footage only when motion is welcome. */
+  var ambientVideos = document.querySelectorAll('video[autoplay]');
+  ambientVideos.forEach(function (video) {
+    if (reduceMotion) {
+      video.pause();
+      video.removeAttribute('autoplay');
+      video.controls = true;
+      return;
+    }
+    var playback = video.play();
+    if (playback) {
+      playback.catch(function () { video.controls = true; });
+    }
+  });
+
   /* --------------------------------------------------------------- form */
   /* Set FORM_ENDPOINT to a form service URL (Formspree, Netlify, Basin...)
      to post submissions as JSON. While it is empty, the form hands the
@@ -234,7 +249,7 @@
           showStatus('ok', 'Thanks. We have your request and will get back to you during business hours.');
         })
         .catch(function () {
-          showStatus('error', 'That did not send. Please call (647) 919-7869 or email info@ayezaelectrical.ca.');
+          showStatus('error', 'That did not send. Please call (647) 919-7869 or email ayezaelectrical@gmail.com.');
         })
         .finally(function () {
           submit.disabled = false;
@@ -248,7 +263,7 @@
       .filter(function (key) { return key !== 'company'; })
       .map(function (key) { return key.replace(/_/g, ' ') + ': ' + values[key]; });
     var subject = 'Quote request: ' + (values.service || 'electrical work');
-    var href = 'mailto:info@ayezaelectrical.ca?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
+    var href = 'mailto:ayezaelectrical@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
     window.location.href = href;
     showStatus('ok', 'Your email app should open with the request filled in. Send it and we will reply during business hours. If nothing opens, call (647) 919-7869.');
   });

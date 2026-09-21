@@ -20,14 +20,15 @@ index.html          Home
 services.html       Residential, commercial, EV charging, design and permits
 about.html          Company, standards, process, coverage
 contact.html        Quote request form, phone, text, email, hours
-credits.html        Photo credits and licences (generated from assets/img/manifest.json)
+credits.html        Project media provenance
 404.html            Not found page
 robots.txt          Crawler rules
 sitemap.xml         Sitemap
 assets/css/styles.css   Design system, single stylesheet
 assets/js/main.js       Navigation, scroll reveal, form handling
 assets/fonts/           Self-hosted Geist and Geist Mono (variable woff2)
-assets/img/             Photography, favicon, social card, image manifest
+assets/img/             Favicon, touch icon, and social sharing image
+assets/newimages/       Supplied project photography and optimized video
 ```
 
 ## What to replace before launch
@@ -38,7 +39,6 @@ business-specific, so this is the whole list.
 | Where | Current value | What to do |
 |---|---|---|
 | Phone number, every page | `(647) 919-7869` and `tel:+16479197869` | Confirm this is the number that should receive calls and texts. It came from a public contractor directory listing. |
-| Email, every page | `info@ayezaelectrical.ca` | Replace with the real inbox. No email address was supplied, so this one is invented. |
 | Domain, canonical and OG tags, `robots.txt`, `sitemap.xml`, JSON-LD | `https://ayezaelectrical.ca` | Replace with the live domain, then update `sitemap.xml` and every JSON-LD block. |
 | Address, footer and about page | `230 Edward Street, St. Thomas, ON` | Confirm against the real place of business. |
 | Opening hours, footer, contact page, JSON-LD | Mon to Fri 9am to 5pm, Sat 9am to 3pm, Sun closed | Confirm the real hours. |
@@ -49,7 +49,6 @@ business-specific, so this is the whole list.
 | Service area, home and about pages | 16 Elgin County municipalities | Confirm which areas are actually served. |
 | Reviews, home page | Three sample quotes | Replace with real, permissioned reviews. The sample copy is marked with an HTML comment. |
 | Response time, home page FAQ | "Most quotes are scheduled within a few business days" | Confirm or remove. |
-| Photography | Creative Commons and public domain stock | Replace with real project photos when available. See `credits.html`. |
 | Trading name | "Ayeza Electrical" on site, "Ayeza Electrical Supplies Inc." in the footer | Confirm the name the company trades under. |
 
 ## The contact form
@@ -94,8 +93,8 @@ pre-selected on load.
 * Form errors are announced through `aria-live` and tied to their fields with `aria-invalid`.
 * No text below 12px. Colour pairs used for text meet WCAG AA.
 
-## Photography
+## Project media
 
-All photographs are Creative Commons or public domain and are listed in `credits.html` with their
-source, author, and licence. `assets/img/manifest.json` is the source of truth for credits. To swap
-an image, keep the same filename and aspect ratio and the layout will not shift.
+The site uses project photographs and video supplied directly by Ayeza Electrical. Optimized WebP
+images and an audio-free, fast-start MP4 live in `assets/newimages/`; the original supplied files
+remain in the same folder. `credits.html` records the media provenance.
