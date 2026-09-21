@@ -42,13 +42,11 @@ business-specific, so this is the whole list.
 | Domain, canonical and OG tags, `robots.txt`, `sitemap.xml`, JSON-LD | `https://ayezaelectrical.ca` | Replace with the live domain, then update `sitemap.xml` and every JSON-LD block. |
 | Address, footer and about page | `230 Edward Street, St. Thomas, ON` | Confirm against the real place of business. |
 | Opening hours, footer, contact page, JSON-LD | Mon to Fri 9am to 5pm, Sat 9am to 3pm, Sun closed | Confirm the real hours. |
-| Licence claim, footer, hero, FAQ | "ECRA/ESA licensed contractor" | Add the real ECRA/ESA licence number. The listing confirmed an active licence but did not publish the number. |
 | Insurance wording, about page and FAQ | "certificate of insurance available on request" | Confirm a current policy exists, or remove the line. |
 | Service list, home and services pages | Residential, commercial, EV charging, lighting, design and permits | Confirm the company does each of these. The list is standard for an Ontario licensed contractor, not taken from the business. |
 | Engineering wording, services page | "sealed engineering drawings ... bring in the right professional" | Confirm the arrangement for sealed drawings. Do not claim engineering work that requires a P.Eng unless one is engaged. |
 | Service area, home and about pages | 16 Elgin County municipalities | Confirm which areas are actually served. |
 | Response time, home page FAQ | "Most quotes are scheduled within a few business days" | Confirm or remove. |
-| Trading name | "Ayeza Electrical" on site, "Ayeza Electrical Supplies Inc." in the footer | Confirm the name the company trades under. |
 
 ## The contact form
 
@@ -94,6 +92,6 @@ pre-selected on load.
 
 ## Project media
 
-The site uses project photographs and video supplied directly by Ayeza Electrical. Optimized WebP
+The site uses project photographs and video supplied directly by Ayeza Electrical Supplies Inc. Optimized WebP
 images and an audio-free, fast-start MP4 live in `assets/newimages/`; the original supplied files
 remain in the same folder. `credits.html` records the media provenance.

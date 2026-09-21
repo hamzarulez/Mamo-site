@@ -379,11 +379,11 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .brand { display: inline-flex; align-items: center; gap: 0.65rem; margin-right: auto; }
 .brand__mark { width: 2rem; height: 2rem; flex: none; color: var(--accent); }
 .brand__text { display: grid; line-height: 1.05; }
-.brand__name { font-size: 0.95rem; font-weight: 600; letter-spacing: -0.02em; }
+.brand__name { font-size: 0.84rem; font-weight: 600; letter-spacing: -0.02em; white-space: nowrap; }
 .brand__sub {
   font-family: 'Geist Mono', monospace;
-  font-size: 0.6rem;
-  letter-spacing: 0.14em;
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-3);
 }
@@ -753,6 +753,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   font-size: var(--t-micro);
   color: var(--ink-3);
 }
+.footer__licence { color: var(--ink); font-size: var(--t-small); font-weight: 600; }
 
 /* --------------------------------------------------------------------------
    Page headers (interior pages)
